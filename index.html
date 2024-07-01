@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            max-width: 1300px;
+            margin: auto;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 10px 20px;
+        }
+        
+        nav .ln {
+            padding-top: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        
+        a {
+            text-decoration: none;
+            margin: 10px;
+            color: black;
+            font-size: small;
+            font-weight: 700;
+        }
+        
+        i {
+            margin: 10px;
+        }
+        
+        .fir img {
+            width: 100%;
+        }
+        
+        .sec {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 70px;
+        }
+        
+        select {
+            border-radius: 5px;
+            width: 250px;
+            height: 40px;
+            border: 1px solid rgb(211, 204, 204);
+            font-weight: 550;
+            padding: 5px;
+        }
+        
+        fieldset {
+            border: none;
+            margin-top: 10px;
+        }
+        
+        .thr {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 70px;
+        }
+        
+        .thr .filtr {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            margin-left: 70px;
+        }
+        
+        .thr .filtr img {
+            width: 100%;
+        }
+        
+        span {
+            font-weight: 600;
+            font-size: large;
+        }
+        
+        .card {
+            text-align: start;
+        }
+        
+        .card p {
+            color: rgb(126, 122, 122);
+            margin: 1px;
+        }
+        
+        .card h4 {
+            margin: 1px;
+        }
+        
+        .card pre {
+            margin: 1px;
+        }
+        
+        .final {
+            text-align: center;
+            width: 100%;
+            margin-top: 70px;
+        }
+        
+        .final form div {
+            margin: 30px;
+        }
+        
+        .final form div input {
+            margin-left: 30px;
+            width: 400px;
+            border: 1px solid rgb(212, 207, 207);
+            height: 30px;
+        }
+        
+        .final form #button {
+            border-radius: 5%;
+            background-color: red;
+            color: white;
+            width: 200px;
+            height: 40px;
+            font-size: medium;
+            font-weight: 400;
+        }
+        
+        footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: rgb(238, 226, 226);
+            text-align: center;
+            padding-top: 40px;
+        }
+        
+        footer #2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div><img src="https://www.thesouledstore.com/static/img/newlogo.8dcc6cc.png" alt=""></div>
+        <div class="ln">
+            <a href="">SUMMER'24</a>
+            <a href="">TOPWEAR</a>
+            <a href="">BOTTOMWEAR</a>
+            <a href="">SHOESS&ACCESSORIES</a>
+            <a href="">RESTOCKED</a>
+            <a href="">THEMES</a>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+    </nav>
+    <main>
+        <div class="fir">
+            <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/Homepage_Banner__1_ycCzHWB.jpg?format=webp&w=1500&dpr=1.3" alt="">
+        </div>
+        <div class="sec">
+            <select name="pets" id="pet-select">
+                    <option value="">Select sorting options</option>
+                    <option value="low-high">low-high</option>
+                    <option value="high-low">high-low</option>
+                    <option value="most frequent">most frequent</option>
+                    <option value="least frequent">leat frequent</option>
+                    <option value="popular">popular</option>
+                    <option value="new">new</option>
+            </select>
+
+        </div>
+        <div class="thr">
+            <div>
+                <header>
+                    <H5>PRODUCTS</H5>
+                    <search>
+                        <form action="./search/">
+                            <input type="search" id="movie" name="q" placeholder="Search for Products" />
+
+                        </form>
+                    </search>
+                </header>
+                <fieldset>
+                    <div>
+                        <input type="checkbox" id="Women Boyfriend shirt" name="Women Boyfriend shirt" checked />
+                        <label for="Women Boyfriend shirt">Women Boyfriend shirt</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Women Bracelet" name="Women Bracelet" checked />
+                        <label for="Women Bracelet">Women Bracelet</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Women cargo" name="Women cargo" checked />
+                        <label for="Women cargo">Women cargo</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Women Tops" name="Women Tops" checked />
+                        <label for="Women Tops">Women Tops</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Women Jeans" name="WomenJeans" checked />
+                        <label for="Women Jeans">Women Jeans</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Women Joggers" name="Women Joggers" checked />
+                        <label for="Women Joggers">Women Jeans</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Women Tshirts" name="Women Tshirts" checked />
+                        <label for="Women  Tshirts">Women  Tshirts</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Women Oversized" name="Women Oversized" checked />
+                        <label for="Women Oversized">Women Oversized</label>
+                    </div>
+                </fieldset>
+
+            </div>
+            <div class="filtr">
+                <div class="card">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/Merchandies-images/1.jpg?format=webp&w=240&dpr=1.5" alt="">
+                    <h4>White bracelet Top</h4>
+                    <p>Women Bracelet</p>
+                    <pre><span>$9</span> MRP incl.of all taxes</pre>
+                </div>
+                <div class="card">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/Merchandies-images/6.jpg?format=webp&w=240&dpr=1.5" alt="">
+                    <h4>Cotton Linen Lavender</h4>
+                    <p>White Boyfriend Shirt</p>
+                    <pre><span>$100</span> MRP incl.of all taxes</pre>
+                </div>
+                <div class="card">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/Merchandies-images/2_1.jpg?format=webp&w=240&dpr=1.5" alt="">
+                    <h4>Korean pants Camel</h4>
+                    <p>Women pants</p>
+                    <pre><span>$200</span> MRP incl.of all taxes</pre>
+                </div>
+
+            </div>
+        </div>
+        <div class="final">
+            <h1>CONTACTUS</h1>
+            <form action="" method="get" class="form-example">
+                <div class="form-example">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" required />
+                </div>
+                <div class="form-example">
+                    <label for="email"> Email: </label>
+                    <input type="email" name="email" id="email" required />
+                </div>
+                <div class="form-example">
+                    <label for="comment"> Comment: </label>
+                    <input type="text" name="Comment" id="comment" required />
+                </div>
+                <div class="form-example">
+                    <input id="button" type="SUBMIT" value="SUBMIT" />
+                </div>
+            </form>
+
+        </div>
+    </main>
+    <footer>
+        <div><img src="https://www.thesouledstore.com/static/img/newlogo.8dcc6cc.png" alt=""></div>
+        <div id="2"><i class="fa-regular fa-copyright"></i>
+            <span>The Solued Store 2024-25</span>
+        </div>
+        <div><i class="fa-brands fa-facebook fa-2xl"></i><i class="fa-brands fa-instagram fa-2xl"></i><i class="fa-brands fa-twitter fa-2xl"></i></div>
+    </footer>
+    <script src="https://kit.fontawesome.com/c70722c963.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
