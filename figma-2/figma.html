@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body {
+            max-width: clamp(1440px, 8vw, 375px);
+            margin: auto;
+            font-family: sans-serif;
+        }
+        
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 30px 80px;
+        }
+        
+        nav #ham {
+            display: none;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #0A0103;
+            margin-left: 32px;
+            font-family: Open Sans;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 1.25px;
+            text-align: center;
+        }
+        
+        nav button {
+            margin-left: 40px;
+            color: #ED0331;
+            background-color: transparent;
+            border: 1px solid #ED0331;
+            width: 82px;
+            height: 48px;
+            border-radius: 8px;
+        }
+        
+        .graduates .container {
+            text-align: center;
+            margin: 0px 80px;
+            margin-top: 130px;
+        }
+        
+        .graduates .container h3 {
+            font-size: clamp(24px, 8vw, 48px);
+            font-weight: 800;
+            line-height: 62px;
+            text-align: center;
+        }
+        
+        .graduates .container p {
+            max-width: 980px;
+            margin: auto;
+            font-family: Open Sans;
+            font-size: clamp(14px, 8vw, 24px);
+            font-weight: 400;
+            line-height: 34px;
+            text-align: center;
+        }
+        
+        .morehiring {
+            display: flex;
+            justify-content: center;
+            gap: 72px;
+            margin: 48px 80px;
+        }
+        
+        .morehiring>div:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 580px;
+        }
+        
+        .morehiring>div:nth-child(1) h2 {
+            font-family: Poppins;
+            font-size: 34px;
+            font-weight: 700;
+            line-height: 40px;
+            text-align: left;
+        }
+        
+        .sm {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-family: Open Sans;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 75px;
+            text-align: left;
+            color: #544D4F;
+        }
+        
+        .morehiring>div:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            width: 515px;
+            border-radius: 16px;
+            border: 1px solid gray;
+            padding: 20px 32px;
+        }
+        
+        .morehiring div:nth-child(2) h4 {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 28px;
+            margin: 0;
+        }
+        
+        .morehiring label {
+            font-family: Open Sans;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 24px;
+            text-align: left;
+        }
+        
+        input {
+            width: 451px;
+            padding: 12px 0px 0px 0px;
+            gap: 8px;
+            height: 25px;
+            border-radius: 8px;
+            border: 1px solid #CCCCCC;
+            margin-bottom: 14px;
+        }
+        
+        .morehiring input+div {
+            width: 201px;
+            border-radius: 10px;
+            border: 1px solid #CECCCD;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            padding: 18px 21px;
+            gap: 26px;
+        }
+        
+        .morehiring input+div input {
+            width: auto;
+        }
+        
+        .morehiring button#btn {
+            margin: 16px 32px;
+            width: 450px;
+            color: white;
+            background-color: #ED0331;
+            height: 48px;
+            border: none;
+            border-radius: 8px;
+        }
+        
+        .jobroles {
+            margin: 10px;
+        }
+        
+        .jobroles h2 {
+            text-align: center;
+            font-size: 34px;
+            font-weight: 700;
+            line-height: 40px;
+            text-align: center;
+            letter-spacing: 0px;
+        }
+        
+        .jobroles div.links {
+            display: flex;
+            justify-content: center;
+            margin: 8px 16px;
+            gap: 40px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .jobroles div.links a {
+            font-family: Open Sans;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 1.25px;
+            color: #0A0103;
+            text-decoration: none;
+        }
+        
+        .jobroles .roles {
+            max-width: 700px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2px 10px;
+        }
+        
+        .jobroles .roles p {
+            background-color: #efefff;
+            color: #6E71CC;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: left;
+            padding: 8px 12px;
+            border-radius: 8px;
+        }
+        
+        .whyhire {
+            margin: 50px 0px;
+        }
+        
+        .whyhire .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .whyhire h2 {
+            font-size: 34px;
+            font-weight: 700;
+            line-height: 40px;
+            text-align: center;
+        }
+        
+        .whyhire .container>div {
+            background-color: #F6EDE7;
+            margin: auto;
+            max-width: 1272px;
+            padding: 79.5px 24px 98.5px 42px;
+            border-radius: 32px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .whyhire .container>div>div {
+            background-color: white;
+            width: 161px;
+            padding: 32px 13px 13px 13px;
+            border-radius: 32px;
+            border: 1px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+        
+        .whyhire .container button {
+            display: block;
+            margin: auto;
+            width: auto;
+            padding: 10px;
+            color: white;
+            background-color: #ED0331;
+            height: 48px;
+            border: none;
+            border-radius: 8px;
+        }
+        
+        @media (width<900px) {
+            h1 {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 32px;
+                text-align: center;
+            }
+            h2 {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 24px;
+                text-align: center;
+            }
+            h4 {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 24px;
+            }
+            nav a {
+                display: none;
+            }
+            nav button {
+                font-size: 12px;
+                padding: 8px 12px;
+            }
+            nav #ham {
+                display: inline-block;
+            }
+            .graduates .container {
+                margin: 72px 16px;
+            }
+            .graduates h3 {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 32px;
+                text-align: center;
+            }
+            .graduates p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: center;
+            }
+            .morehiring {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0px;
+                margin: 76px 20px;
+            }
+            .morehiring h2 {
+                width: 80vw;
+                text-align: center;
+            }
+            .sm {
+                width: 247px;
+            }
+            .whyhire .container>div {
+                justify-content: center;
+                align-items: center;
+            }
+            .whyhire .container>div div {
+                width: 90%;
+            }
+            .morehiring label {
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 24px;
+                text-align: left;
+            }
+            .morehiring input {
+                width: 311px;
+                height: 30px;
+                padding: 12px 0px 0px 0px;
+                border-radius: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <span id="ham" class="material-symbols-outlined">
+                menu
+                </span>
+            <img src="./MasaiLogo-dark-web.svg" alt="">
+            <div>
+                <a href="">COURSE</a>
+                <a href="">FEES</a>
+                <a href="">ABOUT US</a>
+                <a href="">CONTESTS</a>
+                <a href="">EVENTS</a>
+                <a href="">FAQ</a>
+                <button>LOGIN</button></div>
+        </div>
+    </nav>
+
+    <div class="graduates">
+        <div class="container">
+            <h3>Hire Masai graduates</h3>
+            <p>Become a part of the top companies in technology that already hired our graduates for their engineering teams.</p>
+
+        </div>
+    </div>
+
+    <div class="morehiring">
+        <div>
+            <h2>Find your best fit in our graduates</h2>
+            <div class="sm">
+                <small>Lay down your talent requirements with us</small>
+                <small>Choose from the pool of our graduates</small>
+                <small>Review profile and portfolio</small>
+                <small>  Hire the candidate best-suited for your team</small>
+            </div>
+        </div>
+        <div>
+            <h4>
+                Learn more about hiring
+            </h4>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" />
+
+            <label for="name">Work E-mail</label>
+            <input type="text" id="mail" name="name" />
+
+            <label for="name">Bussiness Phone</label>
+            <input type="text" id="phone" name="name" />
+
+            <label for="name">Designation</label>
+            <input type="text" id="designation" name="name" />
+
+            <label for="name">Company</label>
+            <input type="text" id="company" name="name" />
+
+            <div>
+                <input type="radio" id="huey" name="drone" />
+                <span>I'm not a robot</span>
+            </div>
+            <button id="btn">SUBMIT</button>
+        </div>
+    </div>
+    <div class="jobroles">
+        <h2>
+            Here are some of the job roles we can assist you with
+        </h2>
+        <div class="links">
+            <a href="">DEVELOP</a>
+            <a href="">DESIGN</a>
+            <a href="">ANALYTICS</a>
+        </div>
+
+        <div class="roles">
+            <p>UI Designer</p>
+            <p>Product Designer</p>
+            <p>UI UX Designer</p>
+            <p>UX Researcher</p>
+            <p>Visual Designer</p>
+            <p>Interaction Designer</p>
+            <p>Motion Designer</p>
+            <p>UX Designer</p>
+        </div>
+    </div>
+    <div class="whyhire">
+        <div class="container">
+            <h2>Why hire from us?</h2>
+            <div>
+                <div><img src="./Frame 103702.svg" alt=""><small>1200+ hours of coding experience</small></div>
+                <div><img src="./Frame 103702.svg" alt=""><small>1200+ hours of coding experience</small></div>
+                <div><img src="./Frame 103702.svg" alt=""><small>1200+ hours of coding experience</small></div>
+                <div><img src="./Frame 103702.svg" alt=""><small>1200+ hours of coding experience</small></div>
+                <div><img src="./Frame 103702.svg" alt=""><small>1200+ hours of coding experience</small></div>
+                <div><img src="./Frame 103702.svg" alt=""><small>1200+ hours of coding experience</small></div>
+
+            </div>
+            <button class=".btn">APPLY NOW FOR FREE</button>
+        </div>
+    </div>
+</body>
+
+</html>
