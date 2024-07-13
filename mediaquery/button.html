@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            max-width: 1300px;
+            margin: auto;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        button {
+            background-color: red;
+            color: white;
+            border: 1px solid;
+            border-radius: 5px;
+            width: 100px;
+            height: 40px;
+            cursor: pointer;
+        }
+        
+        div.card {
+            width: 500px;
+            height: 200px;
+            background-color: orangered;
+            display: none;
+            transition: opacity 0.5s ease-in-out;
+        }
+        
+        #toggle {
+            display: none;
+        }
+        
+        #toggle:checked+button {
+            display: none;
+        }
+        
+        #toggle:checked~.card {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input type="checkbox" id="toggle">
+        <button onclick="document.getElementById('toggle').click()">Click</button>
+        <div class="card">
+            <h1>
+                This is content
+            </h1>
+        </div>
+    </div>
+</body>
+
+</html>

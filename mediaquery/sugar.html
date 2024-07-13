@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .container {
+            max-width: 1330px;
+            margin: auto;
+        }
+        
+        .container>h1 {
+            text-align: center;
+        }
+        
+        .container .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        
+        .cards div {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            width: 23%;
+            padding: 10px;
+            position: relative;
+        }
+        
+        .cards h1 {
+            font-size: medium;
+            border: 1px dashed rgb(202, 0, 0);
+            color: rgb(181, 1, 1);
+            padding: 5px;
+            width: fit-content;
+            margin-left: 70%;
+        }
+        
+        img {
+            width: 100%;
+            border-radius: 20px;
+        }
+        
+        @media (width <=700px) {
+            .cards {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .cards div {
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>-----OFFERS-----</h1>
+        <div class="cards">
+            <div>
+                <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/dac9f8db-7732-468b-959f-5dd03e5dcf7e.jpg" alt="">
+                <h1>BDAY400</h1>
+            </div>
+            <div>
+                <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/dac9f8db-7732-468b-959f-5dd03e5dcf7e.jpg" alt="">
+                <h1>BDAY400</h1>
+            </div>
+            <div>
+                <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/dac9f8db-7732-468b-959f-5dd03e5dcf7e.jpg" alt="">
+                <h1>BDAY400</h1>
+            </div>
+            <div>
+                <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/dac9f8db-7732-468b-959f-5dd03e5dcf7e.jpg" alt="">
+                <h1>BDAY400</h1>
+            </div>
+            <div>
+                <img src="https://d32baadbbpueqt.cloudfront.net/Promotion/dac9f8db-7732-468b-959f-5dd03e5dcf7e.jpg" alt="">
+                <h1>BDAY400</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
