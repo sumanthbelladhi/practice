@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            max-width: 1300px;
+            margin: auto;
+            background-color: rgb(255, 166, 0);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        .container {
+            height: 80vh;
+            max-width: 900px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        
+        .icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+        
+        .container h1 {
+            animation: a2 4s forwards;
+        }
+        
+        .container .circle {
+            animation: a1 4s forwards;
+        }
+        
+        @keyframes a1 {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(90deg);
+            }
+        }
+        
+        @keyframes a2 {
+            0% {
+                opacity: 1;
+                transform: translateX(-100%);
+                color: white;
+            }
+            50% {
+                opacity: 1;
+                color: rgb(133, 130, 130);
+            }
+            100% {
+                opacity: 1;
+                color: black;
+                transform: translateX(0%);
+            }
+        }
+        
+        .icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.54);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .icon i {
+            text-align: center;
+        }
+        
+        .icon:nth-child(1) {
+            transform: translate(-50%, -50%) rotate(calc(45deg * var(--i))) translate(130px) rotate(calc(-45deg * var(--i)));
+        }
+        
+        .icon:nth-child(2) {
+            transform: translate(-50%, -50%) rotate(calc(45deg * var(--i))) translate(130px) rotate(calc(-45deg * var(--i)));
+        }
+        
+        .icon:nth-child(3) {
+            transform: translate(-50%, -50%) rotate(calc(45deg * var(--i))) translate(130px) rotate(calc(-45deg * var(--i)));
+        }
+        
+        .icon:nth-child(4) {
+            transform: translate(-50%, -50%) rotate(calc(45deg * var(--i))) translate(130px) rotate(calc(-45deg * var(--i)));
+        }
+        
+        .icon:nth-child(5) {
+            transform: translate(-50%, -50%) rotate(calc(45deg * var(--i))) translate(130px) rotate(calc(-45deg * var(--i)));
+        }
+        
+        .icon:nth-child(6) {
+            transform: translate(-50%, -50%) rotate(calc(45deg * var(--i))) translate(130px) rotate(calc(-45deg * var(--i)));
+        }
+        
+        .icon:nth-child(7) {
+            transform: translate(-50%, -50%) rotate(calc(45deg * var(--i))) translate(130px) rotate(calc(-45deg * var(--i)));
+        }
+        
+        .icon:nth-child(8) {
+            transform: translate(-50%, -50%) rotate(calc(45deg * var(--i))) translate(130px) rotate(calc(-45deg * var(--i)));
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pay bills instantly</h1>
+        <div class="circle">
+            <div class="icon" style="--i: 1;"><i class="fa-brands fa-twitter fa-2xl"></i></div>
+            <div class="icon" style="--i: 2;"> <i class="fa-brands fa-facebook fa-2xl"></i></div>
+            <div class="icon" style="--i: 3;"><i class="fa-brands fa-instagram fa-2xl"></i></div>
+            <div class="icon" style="--i: 4;"><i class="fa-brands fa-whatsapp fa-2xl"></i></div>
+            <div class="icon" style="--i: 5;"><i class="fa-brands fa-telegram fa-2xl"></i></div>
+            <div class="icon" style="--i: 6;"><i class="fa-brands fa-youtube fa-2xl"></i></div>
+            <div class="icon" style="--i: 7;"><i class="fa-brands fa-linkedin fa-2xl"></i></div>
+            <div class="icon" style="--i: 8;"><i class="fa-solid fa-phone fa-2xl"></i></div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/c70722c963.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

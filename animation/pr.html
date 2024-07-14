@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle of Icons</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #f0f0f0;
+        }
+        
+        .circle {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #007bff;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 24px;
+        }
+        
+        .icon:nth-child(1) {
+            transform: translate(-50%, -50%) rotate(calc(60deg * var(--i))) translate(130px) rotate(calc(-60deg * var(--i)));
+        }
+        
+        .icon:nth-child(2) {
+            transform: translate(-50%, -50%) rotate(calc(60deg * var(--i))) translate(130px) rotate(calc(-60deg * var(--i)));
+        }
+        
+        .icon:nth-child(3) {
+            transform: translate(-50%, -50%) rotate(calc(60deg * var(--i))) translate(130px) rotate(calc(-60deg * var(--i)));
+        }
+        
+        .icon:nth-child(4) {
+            transform: translate(-50%, -50%) rotate(calc(60deg * var(--i))) translate(130px) rotate(calc(-60deg * var(--i)));
+        }
+        
+        .icon:nth-child(5) {
+            transform: translate(-50%, -50%) rotate(calc(60deg * var(--i))) translate(130px) rotate(calc(-60deg * var(--i)));
+        }
+        
+        .icon:nth-child(6) {
+            transform: translate(-50%, -50%) rotate(calc(60deg * var(--i))) translate(130px) rotate(calc(-60deg * var(--i)));
+        }
+        
+        .icon:nth-child(7) {
+            transform: translate(-50%, -50%) rotate(calc(60deg * var(--i))) translate(130px) rotate(calc(-60deg * var(--i)));
+        }
+        
+        .icon:nth-child(8) {
+            transform: translate(-50%, -50%) rotate(calc(60deg * var(--i))) translate(130px) rotate(calc(-60deg * var(--i)));
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle">
+        <div class="icon" style="--i: 1;"><i class="fa-brands fa-twitter fa-2xl"></i></div>
+        <div class="icon" style="--i: 2;"> <i class="fa-brands fa-facebook fa-2xl"></i>
+        </div>
+        <div class="icon" style="--i: 3;"><i class="fa fa-envelope"></i></div>
+        <div class="icon" style="--i: 4;"><i class="fa fa-cog"></i></div>
+        <div class="icon" style="--i: 5;"><i class="fa fa-heart"></i></div>
+        <div class="icon" style="--i: 6;"><i class="fa fa-star"></i></div>
+        <div class="icon" style="--i: 7;"><i class="fa fa-heart"></i></div>
+        <div class="icon" style="--i: 8;"><i class="fa fa-star"></i></div>
+    </div>
+</body>
+
+</html>
